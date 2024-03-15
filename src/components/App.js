@@ -5,8 +5,7 @@ import './../styles/App.css';
 const App = () => {
   const [inputValue,setInputValue] = useState("")
   const onChangeText = (e) => {
-    let value = e.target.value;
-    setInputValue(value);
+    setInputValue(e.target.value);
   }
 
   return (
