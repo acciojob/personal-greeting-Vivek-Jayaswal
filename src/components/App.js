@@ -5,8 +5,10 @@ import './../styles/App.css';
 const App = () => {
   const [inputValue,setInputValue] = useState("")
   const onChangeText = (e) => {
-    setInputValue(e.target.value);
+    let value = e.target.value;
+    setInputValue(value);
   }
+
   return (
     <div>
         <p>Enter your name:</p>
